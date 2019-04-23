@@ -1,4 +1,8 @@
-body{background-color: #939B07;
+body{background-color: #FAFAEA;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-h1, p {color: white;}
+h1, p {color: #9B9B7E;}
+
+h2, h3 {color: #4E4E33;}
+
+a {color: #ADB803;}
