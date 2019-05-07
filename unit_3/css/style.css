@@ -22,6 +22,19 @@ nav a {
 	margin-right: 10px;
 }
 
+img{ 
+	width: 100%; 
+}
+
+h1 {
+	color: #4d4d4f;
+}
+
+a{
+	color:#407482;
+	text-decoration: none;
+}
+
 #hero{
 	  background-image: url("images/hero-slider-image-brown-amber.jpg");
 	  background-size: cover;
@@ -62,19 +75,6 @@ nav a {
 #quote {
 	 background-color: #fcf5f4;
 	 padding: 30px;
-}
-
-img{ 
-	width: 100%; 
-}
-
-h1 {
-	color: #4d4d4f;
-}
-
-a{
-	color:#407482;
-	text-decoration: none;
 }
 
 footer {
