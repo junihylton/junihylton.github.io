@@ -1,0 +1,90 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #4d4d4f;
+	line-height: 1.5;
+}
+
+header { 
+	background-color: #deebe7;
+	padding: 20px;
+}
+
+nav a {
+	color: #407482;
+	text-decoration: underline;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+#hero{
+	  background-image: url("images/hero-slider-image-brown-amber.jpg");
+	  background-size: cover;
+	  background-color: #fff;
+	  padding-bottom: 30px;
+	}
+
+#hyperclean {
+	 background-color: #deebe7;
+	 padding: 30px;
+}
+
+#switch {
+	 background-color: #fff;
+	 padding: 30px;
+}
+
+#deodorant{
+	 background-color: #fff;
+	 padding: 50px;
+}
+
+#cleanser {
+	 background-color: #fff;
+	 padding: 50px;
+}
+
+#soap {
+	 background-color: #fff;
+	 padding: 50px;
+}
+
+#oil {
+	 background-color: #fff;
+	 padding: 50px;
+}
+
+#quote {
+	 background-color: #fcf5f4;
+	 padding: 30px;
+}
+
+img{ 
+	width: 100%; 
+}
+
+h1 {
+	color: #4d4d4f;
+}
+
+a{
+	color:#407482;
+	text-decoration: none;
+}
+
+footer {
+	background-color: #deebe7;
+	padding: 20px;
+}
+
+h3, h4, h5 {
+	margin: 20px 0;
+}
+
+
+
