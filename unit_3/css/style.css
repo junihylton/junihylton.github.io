@@ -1,6 +1,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -35,36 +36,66 @@ a{
 	text-decoration: none;
 }
 
+h3, h4, h5 {
+	margin: 20px 0;
+}
+
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.two-column .column {
+	width: 50%;
+	float: left;
+}
+
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: all;
+}
+
+.three-column .column {
+	width: 33.32%;
+	float: left;
+}
+
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: all;
+}
+
+.four-column .column {
+	width: 25%;
+	float: left;
+}
+
 #hero{
-	  background-image: url("images/hero-slider-image-brown-amber.jpg");
-	  background-size: cover;
-	  background-color: #fff;
-	  padding-bottom: 30px;
+	  position: relative;
 	}
+
+#hero div{
+	position: absolute;
+	left: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+}	
 
 #hyperclean {
 	 background-color: #deebe7;
 	 padding: 30px;
 }
 
-#switch {
+#four-ways{
 	 background-color: #fff;
 	 padding: 30px;
 }
 
-#deodorant{
+#switch{
 	 background-color: #fff;
-	 padding: 50px;
-}
-
-#cleanser {
-	 background-color: #fff;
-	 padding: 50px;
-}
-
-#soap {
-	 background-color: #fff;
-	 padding: 50px;
 }
 
 #quote {
@@ -77,9 +108,7 @@ footer {
 	padding: 20px;
 }
 
-h3, h4, h5 {
-	margin: 20px 0;
-}
+
 
 
 
