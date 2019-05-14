@@ -1,0 +1,190 @@
+@import url("https://use.typekit.net/moi5hpd.css");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: gill-sans-nova, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 20px; /*1em=20px*/
+	color: #4d4d4f;
+	text-align: center;
+	line-height: 1.5;
+}
+
+header { 
+	background-color: #deebe7;
+	padding: 20px;
+}
+
+nav a {
+	font-family: gill-sans-nova, sans-serif;
+	color: #407482;
+	text-transform: uppercase;
+	font-size: .85em;
+	font-weight: 200;
+	letter-spacing: 1.5px;
+	margin: 0 20px;
+	border-bottom: 1px solid #407482;
+	padding-bottom:2px;
+	
+}
+
+img{
+	width: 100%;
+}
+
+h1 {
+	font-family: mrs-eaves, serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #4d4d4f;
+	font-size: 4em;
+	line-height: 1.3;
+	text-align: left;
+}
+
+h2{
+	color: #4d4d4f;
+	font-size: 2.75em;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin: 20px;
+}
+
+h3{
+	font-family: gill-sans-nova, sans-serif;
+	font-weight: 400;
+	color: #4d4d4f;
+	font-size: 1.5em;
+	margin: 20px;
+}
+
+h4{
+	font-family: gill-sans-nova, sans-serif;
+	font-weight: 200;
+	color: #4d4d4f;
+	font-size: 1em;
+	margin: 10px;
+}
+
+h5 {
+	margin: 20px;
+}
+
+
+a{
+	color:#407482;
+	text-decoration: none;
+}
+
+p{
+	font-family: 'gill-sans-nova', sans-serif;
+	font-size:1em;
+	line-height: 1.5em;
+	text-align: left;
+	padding: 0 50px;
+}
+
+footer {
+	background-color: #7c7c7c;
+	padding: 20px;
+}
+
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.two-column .column {
+	width: 50%;
+	float: left;
+}
+
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: all;
+}
+
+.three-column .column {
+	width: 33.32%;
+	float: left;
+}
+
+.clearfix:after{
+	content:"";
+	display: block;
+	clear: all;
+}
+
+.four-column .column {
+	width: 25%;
+	float: left;
+}
+
+#menu img{
+	width: 15%;
+}
+
+#hero{
+	  position: relative;
+	}
+
+#hero div{
+	position: absolute;
+	left: 50px;
+	top: 50%;
+	right: 45%;
+	transform: translateY(-50%);
+}	
+
+#hero img{
+	width: 100%; 
+	position: relative;
+}	
+
+#hyperclean {
+	 padding: 10px;
+}
+
+#hyperclean img {
+	width: 85%;
+	position: relative;
+	padding:20px;
+}
+
+#three-ways{
+	 background-color: #deebe7;
+	 padding: 30px;
+}
+
+#switch{
+	 background-color: #deebe7;
+}
+
+#quote {
+	 background-color: #efefef;
+	 padding: 30px;
+}
+
+#quote img {
+	width: 55%;
+}
+
+#footer img{
+	 width: 15%;
+	 position: relative;
+}
+
+
+
+
+
+
+
