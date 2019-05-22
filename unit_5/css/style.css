@@ -17,7 +17,8 @@ body {
 }
 
 header { 
-	background-color: #deebe7;
+/*	background-color: #deebe7;*/
+	background-color: #E8C66A;
 	padding: 20px;
 }
 
@@ -103,7 +104,8 @@ p{
 }
 
 footer {
-	background-color: #7c7c7c;
+/*	background-color: #7c7c7c;*/
+	background-color: #FF957E;
 	padding: 20px;
 	align-items: center;
 }
@@ -151,6 +153,7 @@ footer p {
 
 #hero{
 	  position: relative;
+	  background-color: #FFED74;
 	}
 
 #hero div{
@@ -164,34 +167,40 @@ footer p {
 #hero img{
 	width: 100%; 
 	position: relative;
+	opacity: 0.5;
 }
 
 
 #hyperclean {
 	 padding: 50px 0;
+	 background-color: #FFE2B8;
 }
 
 #hyperclean img {
 	width: 85%;
 	position: relative;
 	padding:20px;
+	display: block;
 }
 
 #three-ways{
-	 background-color: #deebe7;
-	 align-items: center;
-	 padding: 30px 0;
+	/* background-color: #deebe7;*/
+	background-color: #FFE2B8;
+	align-items: center;
+	padding: 30px 0;
 }
 
 #switch{
-	 background-color: #deebe7;
+/*	 background-color: #deebe7;*/
+	background-color: #FFE2B8;
 }
 
 #quote {
-	 background-color: #efefef;
-	 padding: 30px;
-	 display:flex;
-	 align-items: center;
+/*	 background-color: #efefef;*/
+	background-color: #FFE2B8;
+	padding: 30px;
+	display:flex;
+	align-items: center;
 }
 
 #quote img {
