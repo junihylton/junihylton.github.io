@@ -22,7 +22,7 @@ header {
 }
 
 nav {
-	float:right;
+	flex-shrink: 0;
 }
 
 nav a:link{
@@ -56,6 +56,11 @@ img{
 	display: block;
 }
 
+img + hr{
+	background-color: #8fb4ab;
+	height:.3em;
+}
+
 h1 {
 	font-family: mrs-eaves, serif;
 	font-weight: 400;
@@ -64,23 +69,27 @@ h1 {
 	font-size: 3.75em;
 	line-height: 1.3;
 	text-align: left;
-	padding: 1em .55em 0em 1em;
 }
 
 h2{
 	color: #4d4d4f;
 	font-size: 2.75em;
 	font-weight: 200;
-/*	text-transform: uppercase;*/
-	margin: 20px;
+	margin: 10px;
 }
+
+h2 + hr{
+	background-color: #8fb4ab;
+	height:.3em;
+}
+
 
 h3{
 	font-family: gill-sans-nova, sans-serif;
 	font-weight: 300;
 	color: #4d4d4f;
 	font-size: 1.5em;
-	margin: 1em;
+    padding: 0 2em 2em 2em;
 }
 
 h4{
@@ -90,11 +99,18 @@ h4{
 	color: #4d4d4f;
 	font-size: 2em;
 	line-height: 1em;
-	margin: .5em;
+	margin: .5em 0 0 .25em;
 }
+
 
 h5 {
 	margin: 1em;
+}
+
+hr{
+	border:none;
+	width:4em;
+	margin:1.5em auto;
 }
 
 span.hyper {
@@ -116,14 +132,14 @@ p{
 	font-size:1em;
 	line-height: 1.5em;
 	text-align: left;
-	padding: 0 4em;
 }
 
 footer {
-	background-color: #7c7c7c;
-	padding: 1em;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	background-color: #9C9C9C;
+	padding: 1em;
 }
 
 footer a:link{
@@ -175,15 +191,15 @@ footer a:active{
 #menu {
 	 display: flex;
 	 align-items: center;
+	 justify-content: space-between;
 }
 
-#menu img{
-	width: 35%;
-	float: left;
+#logo {
+	max-width: 9em;
 }
 
-#menu p{
-	float: right;
+#mobile-img {
+	display:none;
 }
 
 #hero{
@@ -191,8 +207,10 @@ footer a:active{
 	}
 
 #hero div{
+	width: 100%;
+	max-width: 28em;
 	position: absolute;
-	left: 10px;
+	left: 3em;
 	top: 50%;
 	right: 45%;
 	transform: translateY(-50%);
@@ -203,155 +221,221 @@ footer a:active{
 	position: relative;
 }
 
-
 #hyperclean {
-	padding: 2em 0;
+	padding: 1em 0;
 	text-align: center;
 }
 
 #hyperclean p{
+	width: 100%;
+	max-width: 36em;
 	text-align: center;
-	padding: .5em 16em;
+	padding: .5em 1em;
+	margin: 0 auto;
 }
 
 #hyperclean img {
 	width: 100%;
+	max-width: 1000px;
 	position: relative;
-	padding:4em;
+	padding:1.5em 1em 2em 1em;
 	display: block;
+	margin: 0 auto;
 }
-
-#statement p {
-	
-}
-
 
 #three-ways{
 	background-color: #deebe7;
-	align-items: center;
-	padding: 1.5em 5em;
+	padding: 1.5em 2em;
+}
+
+#three-ways p{
+	width: 100%;
+	max-width: 35em;
+	text-align: center;
+	padding: .5em 1em;
+	margin: 0 auto;
 }
 
 #switch{
 	background-color: #deebe7;
-	padding: 2.25em 2.25em;
+	padding: 0 2.25em;
 
 }
 
 #quote {
-    margin: auto;
-	padding: 2em;
-	display:flex;
-	background-color: #efefef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #EDF6F3;
+	padding: 2em; 
 }
 
 #quote p{
-    margin: auto;
-	display:flex;
-   	padding: 2.5em 1em 0em 0em;
-/*	background: blue;*/
+	width: 100%;
+	max-width: 650px;
 }
 
 #quote img {
-    width: 45%;
-    display: flex;
-    margin: auto;
-    padding: 0em 0em 0em 5em;
-/*    background: red;*/
+	width: 100%;
+	max-width: 12em;
+	padding: 1em;
 }
 
-#footer img{
-    width: 30%;
-    float: left;
+
+#footer-logo {
+	max-width: 9em;
+
 }
 
-@media screen and (max-width:1550px){
+@media screen and (max-width:1345px){
 
 	h1 {
 		font-size: 3em;
 	}
+	
+	#hero div{
+	width: 100%;
+	max-width: 23em;
+	left: 1.5em;
+	}	
 
-	p {
-	    padding: 0 3em;
-
-		}
 }
 
-@media screen and (max-width:1243px){
+@media screen and (max-width:1050px){
 
 	h1 {
-		font-size: 2.75em;
-		padding: 1em .45em 0em 1em;
-	}
-
-	#hyperclean p {
-	    padding: .5em 10em;
-	}
-
-	#hyperclean img {
-	    padding: 3em 5em;
-	}
-
-	h3 {
-		font-size: 1.25em;
-	    margin: .5em;
-	}
-}
-
-@media screen and (max-width:1143px){
-	nav a:link{
-	font-size: .75em;
-}
-
-	h1 {
-		padding: 1em .15em 0em 1em;
-	}
-
-	p{
-		font-size: .85em;
-	}
-
-
-}
-
-@media screen and (max-width:1091px){
-
-	h1 {
-		font-size: 2.5em;
-		padding: 1em 0em 0em 1em;
-	}
-
-	h2 {
 		font-size: 2.25em;
 	}
 
-	h4 {
-		font-size: 1.75em;
+	p {
+		font-size: .88em;
 	}
-
-	p{
-		font-size: .85em;
-	}
-
+	
+	#hero div{
+	width: 100%;
+	max-width: 18em;
+	left: 1.5em;
+	}	
 
 }
 
-@media screen and (max-width:1027px){
+@media screen and (max-width:850px){
 
-.two-column .column {
+	nav a:link{
+	font-size: .8em;
+	margin: 0 .5em;	
+	}
+
+	h1 {
+		font-size: 2.25em;
+	}
+
+	h2 {
+		font-size: 2em;
+	}
+
+	h3{
+		font-size: 1em;
+		padding: 0 1em 1em 1em;
+	}
+
+	h4{
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size: .75em;
+	}
+
+	hr {
+		margin:1em auto;
+	}
+	
+	#hero div{
+		width: 100%;
+		max-width: 17em;
+		left: 1.5em;
+	}	
+
+	#hyperclean img {
+	width: 100%;
+	max-width: 800px;
+	}
+
+	#switch{
+		background-color: #deebe7;
+		padding: 0 2.25em;
+	}
+
+	#quote{
+		padding: 1em 2em; 
+	}
+
+	#quote img {
+	width: 100%;
+	max-width: 10em;
+	padding: 1em;
+	}
+
+	#quote p{
+	width: 100%;
+	max-width: 15em;
+	}
+
+}
+
+@media screen and (max-width:500px){
+	
+	nav a:link{
+	font-size: .75em;
+	margin: 0 .5em;
+	}
+
+	footer {
+	flex-direction: column;
+	padding: 1.5em;
+	}
+	
+	.three-column .column {
+	width: 100%;
 	float: none;
+	}
+
+	#menu {
+	flex-direction: column;
+	}
+
+	#mobile-img {
+	display:block;
+	}
+
+	#hero{
+	background-color: #EDF6F3;
+	}
+
+	#hero img{
+  	opacity: 0;
+	}
+
+	#quote {
+	flex-direction: column;
+	align-content:space-between;
+	align-items: center;
+	}
+
+	#quote img {
+	width: 100%;
+	max-width: 12em;
+	padding: 1em;
+	}
+
+	#footer-logo {
+ 	padding: .5em;
+
 }
 
-/*how to stack columns? 
-*/
-
-/*can you change the height of <br>?*/
-
-/*need help with quote section
-*/
-
-
 }
+
 
 
 
