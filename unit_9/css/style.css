@@ -70,9 +70,11 @@ h1 {
 	font-weight: 400;
 	font-style: italic;
 	color: #4d4d4f;
-	font-size: 3.75em;
-	line-height: 1.3;
+	font-size: 3em;
+	line-height: 1;
 	text-align: left;
+	white-space: nowrap;
+	padding-bottom;
 }
 
 h2{
@@ -92,7 +94,7 @@ h3{
 	font-family: gill-sans-nova, sans-serif;
 	font-weight: 300;
 	color: #4d4d4f;
-	font-size: 1.5em;
+	font-size: 1em;
     padding: 0 2em 2em 2em;
 }
 
@@ -122,7 +124,16 @@ span.hyper {
 	font-weight: 400;
 	font-style: italic;
 	color: #4d4d4f;
+	font-size: 1.35em;
+}
+
+span.alissa {
+    font-family: mrs-eaves, serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #4d4d4f;
 	font-size: 1.25em;
+	line-height: 2.5;
 }
 
 
@@ -219,7 +230,7 @@ input[type=submit]:hover {
 }
 
 .three-column .column {
-	width: 33.32%;
+	width: 33.33%;
 	float: left;
 }
 
@@ -243,11 +254,10 @@ input[type=submit]:hover {
 
 #hero div{
 	width: 100%;
-	max-width: 28em;
+	max-width: 500px;
 	position: absolute;
-	left: 3em;
+	left: 5%;
 	top: 50%;
-	right: 45%;
 	transform: translateY(-50%);
 }	
 
@@ -273,7 +283,7 @@ input[type=submit]:hover {
 	width: 100%;
 	max-width: 36em;
 	text-align: center;
-	padding: .5em 1em;
+	padding: .5em 2.5em;
 	margin: 0 auto;
 }
 
@@ -288,7 +298,7 @@ input[type=submit]:hover {
 
 #three-ways{
 	background-color: #deebe7;
-	padding: 1.5em 2em;
+	padding: 1em .5em;
 }
 
 #three-ways p{
@@ -335,36 +345,39 @@ input[type=submit]:hover {
 }
 
 
-
-@media screen and (max-width:1345px){
-
-	h1 {
-		font-size: 3em;
-	}
-	
-	#hero div{
-	width: 100%;
-	max-width: 23em;
-	left: 1.5em;
-	}	
-
-}
-
-@media screen and (max-width:1050px){
+@media screen and (max-width:1024px){
 
 	h1 {
 		font-size: 2.25em;
-	}
+		white-space: normal; 
+		text-align: center;
+		}
+
+/*		h1 span {
+			display: block;
+		}*/
 
 	p {
 		font-size: .88em;
+		}
+
+/*	p span {
+			display: block;
+		}*/
+
+	#hero div {
+		position: relative;
+		left: 0;
+		top: 0;
+		transform: none;
+		max-width: 100%; 
+		padding: 2em;
+		background-color: #deebe7; 
 	}
-	
-	#hero div{
-	width: 100%;
-	max-width: 18em;
-	left: 1.5em;
-	}	
+
+	#hero p { 
+	text-align: center; 
+	}
 
 }
 
@@ -377,6 +390,7 @@ input[type=submit]:hover {
 
 	h1 {
 		font-size: 2.25em;
+		padding: 0 0 .45em 0;
 	}
 
 	h2 {
@@ -384,27 +398,22 @@ input[type=submit]:hover {
 	}
 
 	h3{
-		font-size: 1em;
-		padding: 0 1em 1em 1em;
+/*		font-size: .85em;*/
+	padding: 1em;
 	}
 
 	h4{
-		font-size: 1.5em;
+		font-size: 1.35em;
 	}
 
-	p {
-		font-size: .75em;
-	}
+/*	p {
+		font-size: .95em;
+	}*/
 
 	hr {
-		margin:1em auto;
+		margin: 10px auto 15px auto;
+
 	}
-	
-	#hero div{
-		width: 100%;
-		max-width: 17em;
-		left: 1.5em;
-	}	
 
 	#hyperclean img {
 	width: 100%;
@@ -413,7 +422,7 @@ input[type=submit]:hover {
 
 	#switch{
 		background-color: #deebe7;
-		padding: 0 2.25em;
+		padding: 0 1.15em 1em 1.15em;
 	}
 
 	#quote{
@@ -427,13 +436,14 @@ input[type=submit]:hover {
 	}
 
 	#quote p{
+	font-size: .85em;
 	width: 100%;
-	max-width: 15em;
+	max-width: 20em;
 	}
 
 }
 
-@media screen and (max-width:750px){
+@media screen and (max-width:768px){
 	nav{
 		display: none;
 	}
@@ -456,6 +466,14 @@ input[type=submit]:hover {
 
 	}
 
+	h3 {
+		padding: .5em 1em 1.5em 1em;
+	}
+
+	hr {
+		margin: 0 auto 10px auto;
+	}
+
 	footer {
 		display: block;
 		padding: 1.5em;
@@ -470,6 +488,8 @@ input[type=submit]:hover {
 	
 	.three-column .column {
 		width: 100%;
+		max-width: 425px;
+		margin: 0 auto;
 		float: none;
 	}
 
@@ -481,33 +501,8 @@ input[type=submit]:hover {
 		flex-direction: column;
 	}
 
-	#hero {
-		display: none;
-	}
-
-
-	#mobile-img {
-		display:block;
-		width: 100%;
-	}
-
-
-	#clean-mobile{
-		display: block;
-		padding: 2em;
-		background-color: #deebe7;
-	}
-
-	#clean-mobile h1{
-		text-align: center;
-	}
-
-	#clean-mobile p{
-		text-align: center;
-	}
-
 	#switch{
-	padding: 2em 5em;
+	padding: 2em 1em;
 	}
 
 	#quote {
@@ -525,7 +520,7 @@ input[type=submit]:hover {
 
 	#footer-logo {
 		float:none;
- 		padding: .5em;
+ 		padding: .5em 0;
  		display: block;
  	}
 
@@ -542,17 +537,37 @@ input[type=submit]:hover {
 
 
 
-@media screen and (max-width:500px){
-	
-	#clean-mobile h1{
-		font-size: 2em;
+@media screen and (max-width:414px){
+
+	h2 {
+		font-size: 1.5em;
 	}
 
-	#switch{
-	padding: 2em 2em;
+		p {
+		font-size: .75em;
+	}
+
+	#hero div {
+		padding: 1.5em;
 	}
 
 
+
+}
+
+/*@media screen and (max-width:411px){
+
+}*/
+
+@media screen and (max-width:375px){
+
+}
+/*
+@media screen and (max-width:360px){
+
+}*/
+
+@media screen and (max-width:320px){
 
 }
 
